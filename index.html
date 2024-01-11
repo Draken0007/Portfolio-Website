@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Bharat - Developer Portfolio </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins',sans-serif;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 85px;
+            background-color: rgb(6, 6, 41);
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li{
+            list-style-type: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        
+        nav ul li a:hover{
+            color: rgb(74, 74, 152);
+        }
+
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left{
+            font-size: 1.5rem;
+        }
+
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+
+        }
+
+        .firstsection > div{
+            width: 30%;
+        }
+        
+        .leftsection{
+            font-size: 2rem;
+        }
+
+        
+        .leftsection p{
+            font-size: 1cap;
+        }
+
+
+        .leftsection .buttons{
+            padding: 50p 0;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: rgb(34, 34, 104);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px; 
+            cursor: pointer;   
+        }
+
+
+        .rightsection img{
+            width: 80%;
+        }
+
+        .purple{
+            color: rgb(170, 107, 228);
+        }
+
+        #element{
+            color: rgb(170, 107, 228);
+        }
+        
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1{
+            font-size: 1.9rem;
+        }
+    
+        .aboutme{
+            max-width: 300px;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .aboutme img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .aboutright{
+            align-items: center;
+        }
+
+
+
+        .project-section {
+            max-width: 80vw;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+
+        .project-info {
+            text-align: left;
+        }
+
+        .project-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .project-info p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .project-info .btn {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+
+
+        .skills-section {
+            max-width: 80vw;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .skill {
+            width: 45%;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: rgb(34, 34, 104);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        .skill h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .skill p {
+            font-size: 1rem;
+        }
+
+        .contact-section {
+            max-width: 80vw;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        label {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            background-color: rgb(34, 34, 104);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(74, 74, 152);
+        }
+
+        .project a{
+            text-decoration: none;
+            color: lightcoral;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Bharat Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact</a></li>                                
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Bharat</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume </button>
+                    <button class="btn"><a href="https://github.com/Bharat00007">VistGithub</a></button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+
+        <div><h1>About me</h1></div>
+
+        <section class="firstsection">
+            <div class="leftsection"><p>Hello there! I'm Bharat Taklikar, a passionate and results-driven Web developer with a knack for crafting innovative solutions to real-world challenges. Armed with a solid foundation in computer science and a creative mindset, I specialize in turning ideas into powerful, user-friendly web applications.</p></div>
+            <div class="rightsection">
+                <div class="aboutme">
+         
+                    <img src="About.jpg"">
+                </div>
+        
+            </div>
+        </section>
+        <hr>
+
+      
+        <section class="project-section">
+            <h1>Projects</h1>
+        
+            <div class="project">
+                <div class="project-info">
+                    <h2>Project 1 </h2>
+                    <p>I have made a Whatsapp Bot  that can answer any Mathematical questions .</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        
+            <div class="project">
+                <div class="project-info">
+                    <h2>Project 2</h2>
+                    <p> I have made a virtual AI assistent that can listen and respond with apropriate answers using python</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-info">
+                    <h2>Project 3</h2>
+                    <p>I have made a platform where startups can be promoted and get funded by individual and Angel investors </p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+
+        
+        </section>
+        <hr>
+
+        <section class="skills-section">
+            <h1>Skills</h1>
+        
+            <div class="skills-container">
+                <div class="skill">
+                    <h2>Web Development</h2>
+                    <p>HTML, CSS, JavaScript, React, Node.js</p>
+                </div>
+        
+                <div class="skill">
+                    <h2>Graphic Design</h2>
+                    <p>Adobe Photoshop, Illustrator</p>
+                </div>
+        
+                <div class="skill">
+                    <h2>UI/UX Design</h2>
+                    <p>Figma, Sketch</p>
+                </div>
+        
+                <div class="skill">
+                    <h2>Video Editing</h2>
+                    <p>Adobe Premiere Pro, Final Cut Pro</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        
+        <section class="contact-section">
+            <h1>Contact Me</h1>
+        
+            <form id="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+        
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+
+
+      
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Video Editor', 'Graphics Designer', 'UI/UX Designer','Web Develpoer'],
+          typeSpeed: 50,
+        });
+      </script>
+
+
+    
+</body>
+</html>
